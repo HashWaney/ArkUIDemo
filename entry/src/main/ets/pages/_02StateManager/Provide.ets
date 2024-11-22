@@ -19,7 +19,7 @@ class Animal {
 
 @Entry
 @Component
-struct Demo1 {
+struct Demo1 { // 爷爷辈
   @Provide dog:Animal = new Animal('WangCai', 'dog', 2);
 
   changeAge2(animal:Animal) {
@@ -49,20 +49,20 @@ struct Demo1 {
 }
 
 @Component
-struct Demo2 {
+struct Demo2 { // 父亲辈
 
   build() {
     Column({ space:10 }) {
-      Text(`Demo2.`)
+      Text(`Demo2.`) // 父亲名字叫demo2
         .fontColor(Color.Blue)
         .fontSize(30)
-      Demo3()
+      Demo3() // 生了一个儿子demo3
     }
   }
 }
 
 @Component
-struct Demo3 {
+struct Demo3 {  // 孙子辈
   @Consume dog:Animal;
 
   changeName2(animal:Animal) {

@@ -5,6 +5,12 @@ class GreenButtonState {
     this.width = width;
   }
 }
+// 1、通过 git方式将自己的一些学习代码管理起来，防止更换设备之后，代码丢失
+// 2、有对应的提交记录===》学习的成长过程
+// 3、git版本管理工具---gitlab
+// 4、为了协同开发以及开发权限管理==保证公司的资产q
+/// git remote add origin https://github.com/HashWaney/ArkUIDemo.git
+
 
 @Component
 struct GreenButton {
